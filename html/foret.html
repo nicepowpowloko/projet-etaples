@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Ville</title>
+</head>
+<body>
+   
+    <header>
+        <nav>
+            <div class="grille">
+                <div class="grille1"><img id="logoimg" src="./img/logovoile.png"  alt=""> </div>
+                <div class="grille2"> <h1 class="titrep">Forêt d'Etaples</h1></div>
+                <div class="grille3"> </div>
+                <div class="grille4"> </div>
+                <div class="grille5"><!--navigation-->
+                    <div class="navigatione">
+                      
+                      <ul>
+                        <li class="list active">
+                          <a href="#">
+                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 82 85">
+                              <defs>
+                                <linearGradient id="linear-gradient" x1="0.5" y1="0.364" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                                  <stop offset="0" stop-color="#00245b"/>
+                                  <stop offset="1" stop-color="#aae2ff"/>
+                                </linearGradient>
+                              </defs>
+                              <g id="Polygone_9" data-name="Polygone 9" transform="translate(0 85) rotate(-90)" fill="url(#linear-gradient)">
+                                <path d="M 84.17768096923828 81.5 L 0.8223159909248352 81.5 L 42.49997711181641 1.086586594581604 L 84.17768096923828 81.5 Z" stroke="none"/>
+                                <path d="M 42.49997711181641 2.173164367675781 L 1.644630432128906 81 L 83.35536956787109 81 L 42.49997711181641 2.173164367675781 M 42.49997711181641 0 L 85 82 L 0 82 L 42.49997711181641 0 Z" stroke="none" fill="#707070"/>
+                              </g>
+                            </svg></span>
+                            <a href="./index.html"><span class="text">Home</span></a>
+                          </a>
+                        </li>
+                        <li class="list">
+                          <a href="#">
+                            <span class="icon"><img src="./img/logovoile.png" alt=""></span>
+                            <a href="./port.html"><span class="text">Port</span></a>
+                          </a>
+                        </li>
+                        <li class="list">
+                          <a href="#">
+                            <span class="icon"><img src="./img/logovoile.png" alt=""></span>
+                            <a href="./foret.html"><span class="text">Forêt</span></a>
+                          </a>
+                        </li>
+                        <li class="list">
+                          <a href="#">
+                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 82 85">
+                              <defs>
+                                <linearGradient id="linear-gradient" x1="0.5" y1="0.408" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                                  <stop offset="0" stop-color="#00245b"/>
+                                  <stop offset="1" stop-color="#aae2ff"/>
+                                </linearGradient>
+                              </defs>
+                              <g id="Polygone_8" data-name="Polygone 8" transform="translate(82) rotate(90)" fill="url(#linear-gradient)">
+                                <path d="M 84.17768096923828 81.5 L 0.8223161101341248 81.5 L 42.4999885559082 1.086586594581604 L 84.17768096923828 81.5 Z" stroke="none"/>
+                                <path d="M 42.4999885559082 2.173164367675781 L 1.644630432128906 81 L 83.35536956787109 81 L 42.4999885559082 2.173164367675781 M 42.4999885559082 0 L 85 82 L 0 82 L 42.4999885559082 0 Z" stroke="none" fill="#707070"/>
+                              </g>
+                            </svg></span>
+                            <a href="./ville.html"><span class="text">Ville</span></a>
+                          </a>
+                        </li>
+                      <div class="indicatore"></div>
+                      </ul>
+                    </div> </div>
+                <div class="grille6"><p></p> </div>
+                </div>
+        </nav>
+    </header>
+  
+    <main>
+        <section>
+            <div class="photoslide">
+                <div class="photodiv1"> 
+                    <div id="carousel-wrapper">
+                        <div id="menu">
+                            <div id="current-option">
+                              <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                              <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+                            </div>
+                            <button id="previous-option"></button>
+                            <button id="next-option"></button>
+                          
+                        </div>
+                        <div id="image"></div>
+                      </div>
+                    </div> 
+                <div class="photodiv2">
+                
+
+                </div>
+                </div>
+                
+               
+       
+        </section>
+    </main>
+    <footer>
+        <section>
+           
+        </section>
+    </footer>
+ 
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="../js/index.js"></script>
+<script>
+  const list = document.querySelectorAll('.list');
+  function activeLink(){
+    list.forEach((item) =>
+    item.classList.remove('active'));
+    this.classList.add('active');
+  }
+  list.forEach((item) =>
+  item.addEventListener('click',activeLink));
+</script>
+<script src="../js/foret.js"></script>
+</html>
